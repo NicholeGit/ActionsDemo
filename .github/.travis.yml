@@ -1,3 +1,7 @@
+language: go # 使用语言.
+go:
+  - "1.18"  # 版本号, 支持多种版本号
+
 sudo: required #  #有定制化开发环境需要，默认false，不开启容器，编译效率高
 
 os:            # 使用的操作系统
@@ -5,7 +9,7 @@ os:            # 使用的操作系统
   - osx
 
 notifications:  # 邮箱通知
-  email: 123576128@qq.com
+  email: freeit@126.com
 
 go_import_path: # 使用Go需要导入的包.
   - github.com/gin-gonic/gin
