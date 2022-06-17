@@ -19,6 +19,7 @@ https://github.com/NicholeGit/ActionsDemo/workflows/Go/badge.svg
 - `workflows/Go/badge.svg`  中间的 Go 是 `https://github.com/NicholeGit/ActionsDemo/actions` 下的名称。需要注意区分大小写
 ### Release 徽章
 [![Release](https://img.shields.io/github/v/release/NicholeGit/ActionsDemo.svg?style=flat-square)](https://github.com/NicholeGit/ActionsDemo)
+需要创建 release 版本才出现
 
 ### 测试覆盖率 徽章
 [![codecov](https://codecov.io/gh/NicholeGit/ActionsDemo/branch/main/graph/badge.svg?token=UO0KNTXGFE)](https://codecov.io/gh/NicholeGit/ActionsDemo)
