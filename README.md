@@ -6,6 +6,27 @@
 
 ## git actions
 [GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)  
+- 当代码推送到 master和 release分支的时候触发构建
+```yaml
+on:
+  push:
+    branches:
+    - master
+    - release/*
+```
+- 当只有 pull_request被合并到 master分支的时候：
+```yaml
+on:
+  pull_request:
+    branches:
+    - master
+```
+- 比如星期一到星期五的每天2点构建任务呢：
+```yaml
+on:
+  schedule:
+  - cron: 0 2 * * 1-5
+```
 
 ## 徽章
 > - [GitHub 徽章制作](https://segmentfault.com/a/1190000039065313)
