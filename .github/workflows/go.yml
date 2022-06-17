@@ -26,6 +26,8 @@ jobs:
         go vet -stdmethods=false $(go list ./...)
         go install mvdan.cc/gofumpt@latest
         test -z "$(gofumpt -s -l -extra .)" || echo "Please run 'gofumpt -l -w -extra .'"
+        curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh
+        golangci-lint run -v
         
     - name: Test
       run: go test -race -coverprofile=coverage.txt -covermode=atomic ./...
