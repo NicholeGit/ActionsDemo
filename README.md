@@ -3,6 +3,7 @@
 [![Go](https://github.com/NicholeGit/ActionsDemo/workflows/Go/badge.svg?branch=main)](https://github.com/NicholeGit/ActionsDemo/actions)
 [![Release](https://img.shields.io/github/v/release/NicholeGit/ActionsDemo.svg?style=flat-square)](https://github.com/NicholeGit/ActionsDemo)
 [![codecov](https://codecov.io/gh/NicholeGit/ActionsDemo/branch/main/graph/badge.svg?token=UO0KNTXGFE)](https://codecov.io/gh/NicholeGit/ActionsDemo)
+
 ## git actions
 [GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
 
