@@ -7,13 +7,15 @@ on:
 
 jobs:
   release:
-    - name: Run GoReleaser
-      uses: goreleaser/goreleaser-action@v2
-      if: success() && startsWith(github.ref, 'refs/tags/')
-      with:
-        version: latest
-        args: release --rm-dist
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      runs-on: ubuntu-latest
+      steps:
+        - name: Run GoReleaser
+          uses: goreleaser/goreleaser-action@v2
+          if: success() && startsWith(github.ref, 'refs/tags/')
+          with:
+            version: latest
+            args: release --rm-dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
 
