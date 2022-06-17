@@ -13,14 +13,14 @@ jobs:
       - name: Check out codes
         uses: actions/checkout@v3
 
-      - name: Validate Go Releaser configuration
-        uses: docker://goreleaser/goreleaser:latest
-        with:
-          arg: Check
+      - name: validate
+          uses: docker://goreleaser/goreleaser:latest
+          with:
+            args: check
 
-      - name: Create release on Github
-        uses: docker://goreleaser/goreleaser:latest
-        with:
-          arg: release
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: release
+          uses: docker://goreleaser/goreleaser:latest
+          with:
+            args: release
+          env:
+            GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
