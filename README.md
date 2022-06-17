@@ -39,6 +39,8 @@ goreleaser init
 goreleaser build --single-target
 goreleaser release --snapshot 
 ```
+- 使用 [release.yml](\.github\workflows\release.yml) 每次创建 tag 会触发 action 生成版本
+- 用 [.goreleaser.yml](.goreleaser.yml) 控制生成文件
 
 ## 徽章
 > - [GitHub 徽章制作](https://segmentfault.com/a/1190000039065313)
@@ -55,6 +57,7 @@ https://github.com/NicholeGit/ActionsDemo/workflows/Go/badge.svg
 ### Release 徽章
 [![Release](https://img.shields.io/github/v/release/NicholeGit/ActionsDemo.svg?style=flat-square)](https://github.com/NicholeGit/ActionsDemo)
 - 需要创建 release 版本才出现
+
 
 ### 测试覆盖率 徽章
 [![codecov](https://codecov.io/gh/NicholeGit/ActionsDemo/branch/main/graph/badge.svg?token=UO0KNTXGFE)](https://codecov.io/gh/NicholeGit/ActionsDemo)
@@ -92,5 +95,5 @@ after_success: # 上传测试报告
   - bash <(curl -s https://codecov.io/bash)
 ```
 - 在 https://codecov.io/ 使用 GitHub 帐号登陆  
-点击Settings -> Badge
+点击Settings -> Badge  
 ![img.png](image/img.png)
