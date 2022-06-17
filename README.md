@@ -7,6 +7,8 @@
 ## github actions
 > - [GitHub Actions 入门教程](http://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html)
 > - [使用 GitHub Actions 自动化构建 Golang 应用](https://blog.51cto.com/u_15077560/2584846)
+
+### 
 - 当代码推送到 master和 release分支的时候触发构建
 ```yaml
 on:
